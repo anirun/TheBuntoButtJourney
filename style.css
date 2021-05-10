@@ -1,0 +1,52 @@
+header {
+  text-align: center;
+}
+
+a:link {
+  color: lavender;
+}
+
+a:visited {
+  color: lavender;
+}
+
+body, html {
+    height: 100%;
+}
+
+bg {
+  background-image: "images/BBP-1.jpg";
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2  {
+    text-align: center;
+    color: lightcoral;
+    font-size: small;
+}
+
+nav {
+  align-items: center;
+}
+
+nav a {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: lightcoral;
+  color: lightcoral;
+}
+
+img {
+  padding: 30px;
+  position: center;
+}
+
