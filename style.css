@@ -40,7 +40,9 @@ nav a {
 }
 
 img {
-  padding: 30px;
+  padding-top: 30px;
   position: center;
   border-radius: 25%;
+  width: 75%;
+  height: auto;
 }
