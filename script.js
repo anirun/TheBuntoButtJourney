@@ -19,16 +19,17 @@ function two() {
 }
 
 // Three images side by side
-function three() {
+function four() {
     for (i = 0; i < elements.length; i++) {
-      elements[i].style.msFlex = "33%";  // IE10
-      elements[i].style.flex = "33%";
+      elements[i].style.msFlex = "25%";  // IE10
+      elements[i].style.flex = "25%";
     }
   }
 
-// highlight current button
-var buttons = document.getElementById("myButtons");
-var btns = buttons.getElementsByClassName("btn");
+/* Add active class to the current button (highlight it)
+
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
@@ -36,3 +37,5 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+*/

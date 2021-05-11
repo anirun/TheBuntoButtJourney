@@ -5,6 +5,7 @@
         <title>BUN TO BUTT!</title>
     </head>
     <body>
+        <script src="script.js"></script>
         <header>
             <h1>The Bun to Butt Journey</h1>
             <h2>Actively searching since May 2020...</h2>
@@ -14,15 +15,13 @@
             </nav>
             <img src="images/BBP-1.jpg">
         </header>
-        <script src="script.js"></script>
 <!-- Photo Grid Buttons -->
-        <div class="buttonHeader">
-            <h2>toggle photo view</h2>
-        </div>
-        <div class="buttons" id="myButtons">
-            <button class="btn active" onclick="two()">2</button>
-            <button class="btn" onclick="three()">3</button>
-        </div>
+    <div class="header" id="myHeader">
+        <h2>Click on the buttons to change the grid view.</h2>
+        <button class="btn" onclick="one()">1</button>
+        <button class="btn active" onclick="two()">2</button>
+        <button class="btn" onclick="four()">4</button>
+    </div>
 <!-- Photo Grid -->
         <div class="row">
             <div class="column">

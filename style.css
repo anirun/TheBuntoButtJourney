@@ -1,6 +1,7 @@
 /* header formatting*/
 header {
   text-align: center;
+  padding-top: 50px;
 }
 
 header img {
@@ -43,15 +44,17 @@ h2  {
 }
 
 h3 {
-  font-weight: bolder;
-  color: darkolivegreenblush;
-  text-align:right;
-  padding-right: 30px;
+    font-weight: bolder;
+    color: darkolivegreen;
+    text-align:right;
+    padding-right: 30px;
 }
 
 /* nav bar formatting */
 nav {
-  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 30px;
 }
@@ -65,12 +68,37 @@ nav a {
   color: lavender;
 }
 
+/* button formatting */
+.header {
+  text-align: center;
+  padding: 32px;
+  color: darkolivegreen;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* button behavior */
+.btn:hover, .btn.on:hover {
+  background-color:peachpuff;
+}
+
+.btn.on {
+  background-color:darkolivegreen;
+  color: lavender;
+}
+
 /* image table */
 * {
   box-sizing: border-box;
 }
 
-/* image behavior in gallery because why not */
 .row img:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -92,43 +120,6 @@ nav a {
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 4px;
   vertical-align: middle;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.buttonHeader {
-  padding-top: 50px;
-  text-align: center;
-}
-
-/* button formatting */
-.buttons {
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/* button behavior */
-.btn:hover {
-  background-color:peachpuff;
-}
-
-.btn.active {
-  background-color:darkolivegreen;
-  color: lavender;
 }
