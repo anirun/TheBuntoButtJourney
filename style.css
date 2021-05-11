@@ -1,33 +1,59 @@
+/* header formatting*/
 header {
   text-align: center;
 }
 
+header img {
+  padding-top: 30px;
+  position: center;
+  border-radius: 25%;
+  width: 75%;
+  height: auto;
+}
+
+/* link formatting */
 a:link {
-  color: darkolivegreen;
+  color: lavender;
 }
 
 a:visited {
-  color: darkolivegreen;
+  color: lavender;
 }
 
+a:hover {
+  color: lightpink;
+}
+
+/* background */
 body {
-    background-color: darkolivegreen;
+    background-color: white;
 }
 
+/* text formatting */
 h1 {
     text-align: center;
-    color: lavender;
+    color: darkolivegreen;
     font-size: x-large;
 }
 
 h2  {
     text-align: center;
-    color: lavender;
+    color: darkolivegreen;
     font-size: small;
 }
 
+h3 {
+  font-weight: bolder;
+  color: darkolivegreenblush;
+  text-align:right;
+  padding-right: 30px;
+}
+
+/* nav bar formatting */
 nav {
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 nav a {
@@ -35,14 +61,74 @@ nav a {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: lavender;
+  background-color: darkolivegreen;
   color: lavender;
 }
 
-img {
-  padding-top: 30px;
-  position: center;
-  border-radius: 25%;
-  width: 75%;
-  height: auto;
+/* image table */
+* {
+  box-sizing: border-box;
+}
+
+/* image behavior in gallery because why not */
+.row img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sit next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.buttonHeader {
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* button formatting */
+.buttons {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* button behavior */
+.btn:hover {
+  background-color:peachpuff;
+}
+
+.btn.active {
+  background-color:darkolivegreen;
+  color: lavender;
 }
